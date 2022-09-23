@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class SeleniumDemo {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","/Users/ably/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", args[0]);
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");
         ChromeDriver driver = new ChromeDriver(chromeOptions);
